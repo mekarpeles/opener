@@ -1,4 +1,4 @@
-entis
-=====
+OpenER
+======
 
-Python Entity Resolution Library
+Open Entity Resolution: A Python Entity Resolution Library
