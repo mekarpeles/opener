@@ -1,13 +1,13 @@
 #-*- coding: utf-8 -*-
 
 """
-    waltz
+    opener
     ~~~~~
 
     Setup
     `````
 
-    $ pip install waltz    
+    $ pip install .
 """
 
 from distutils.core import setup
@@ -23,11 +23,12 @@ setup(
         ],
     platforms='any',
     license='LICENSE',
-    install_requires=[
-    ],
+    install_requires=[        
+        'whoosh >= 2.4.1',
+        ],
     scripts=[
         "scripts/er"
         ],
     description="OpenER is an open entity resolution toolkit",
-    long_description=open('README.md').read(),
+    long_description=open(os.path.join(os.path.dirname(__file__), 'README.md')).read(),
 )
