@@ -5,7 +5,7 @@ from math import ceil
 import json
 import requests
 
-from api.search import match, index
+from api.v1.search import match, index
 
 TAG_API = 'http://api.stackoverflow.com/1.1/tags'
 PATH = os.path.join('/'.join(os.path.abspath(__file__).split('/')[:-2]),
